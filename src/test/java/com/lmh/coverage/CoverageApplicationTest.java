@@ -10,7 +10,7 @@ class CoverageApplicationTest {
 
     @Test
     void SCREG() {
-        String regex = "a*|(a|bb)*";
+        String regex = "(a*ba*b)*a*ba*";
         SCREG SCREG = new SCREG();
         SCREG.generate(regex);
 
